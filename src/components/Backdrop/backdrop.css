@@ -1,0 +1,8 @@
+.backdrop{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: gainsboro;
+    z-index: 100;
+    left: 0;
+}
