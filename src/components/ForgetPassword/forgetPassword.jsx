@@ -1,7 +1,7 @@
 import React from "react";
+import Header from '../login/Header/Toolbar'
 
-
-import './forgetpassword.scss'
+import './forgetpassword.css'
 class ForgetPassword extends React.Component {
   constructor(props) {
     super(props);
@@ -9,6 +9,9 @@ class ForgetPassword extends React.Component {
 
   render() {
     return (
+      <div>
+        <Header />
+      <div className='root1'>
       <div className="base-container1" ref={this.props.containerRef}>
         <div className="header1">Enter email for reset</div>
         <div className="content1">
@@ -21,10 +24,12 @@ class ForgetPassword extends React.Component {
           </div>
         </div>
         <div className="footer">
-          <button type="button" className="btn">
+          <button type="button" className="btn btn-primary">
             Reset Password
           </button>
         </div>
+      </div>
+      </div>
       </div>
     );
   }
