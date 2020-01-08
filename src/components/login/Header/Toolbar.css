@@ -26,6 +26,11 @@
      text-decoration: none;
  }
 
+ .toolbar-logo a:hover{
+    color: blue;
+    font-size: 3rem;
+    text-decoration: none;
+}
  .nav-items ul{
      padding: 0;
      margin: 0;
@@ -44,7 +49,14 @@
  .nav-items a:hover,
  .nav-items a:active{
      color:greenyellow;
+     text-decoration: none;
  }
  .image{
-     margin-left:1rem
+     margin-left:1rem;
+     display: flex;
+     flex-direction: row;
+    
  }
+ .img { 
+    object-fit: contain;
+  }

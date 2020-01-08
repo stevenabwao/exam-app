@@ -1,7 +1,8 @@
 import React from "react";
-import loginImg from "../../login.svg";
 
-export class Register extends React.Component {
+import './style.scss'
+
+class Register extends React.Component {
   constructor(props) {
     super(props);
   }
@@ -11,9 +12,6 @@ export class Register extends React.Component {
       <div className="base-container" ref={this.props.containerRef}>
         <div className="header">Register</div>
         <div className="content">
-          <div className="image">
-            <img src={loginImg} />
-          </div>
           <div className="form">
             <div className="form-group">
               <label htmlFor="username">Username</label>
@@ -38,3 +36,4 @@ export class Register extends React.Component {
     );
   }
 }
+export default Register

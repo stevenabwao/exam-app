@@ -2,7 +2,7 @@
     position: fixed;
     height: 100%;
     width: 100%;
-    background: gainsboro;
+    background: rgb(102, 78, 236);
     z-index: 100;
     left: 0;
 }

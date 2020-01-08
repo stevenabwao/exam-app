@@ -1,6 +1,10 @@
 import React from "react";
+import {Link} from "react-router-dom"
+import ExamApp from '../ExamApp'
+import Header from './Header/Toolbar'
 
-import "./style.scss"
+
+
 class Login extends React.Component {
   constructor(props) {
     super(props);
@@ -8,6 +12,9 @@ class Login extends React.Component {
 
   render() {
     return (
+     <div>
+       <Header />
+   
       <div className = "root">
       <div className="base-container" ref={this.props.containerRef}>
         <div className="header">ENTER CREDENTIALS</div>
@@ -24,12 +31,15 @@ class Login extends React.Component {
           </div>
         </div>
         <div className="footer">
-          <button type="button" className="btn-primary">
+          <Link to='/home'>
+          <button type="button" className="btn-primary" onClick={ExamApp}>
             Login
           </button>
+          </Link>
         </div>
       </div>
       </div>
+      </div> 
     );
   }
 }
