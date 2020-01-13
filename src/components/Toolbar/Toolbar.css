@@ -1,4 +1,7 @@
- .toolbar{
+.root{
+    background: rgb(243, 216, 243);
+}
+.toolbar{
      width: 100%;
      background-color: rgba(111, 18, 119, 0.692);
      position: fixed;

@@ -1,7 +1,12 @@
 import React from 'react';
 import Toolbar from './Toolbar/Toolbar'
 import SideDrawer from './SideDrawer/SideDrawer'
-import Backdrop from './Backdrop/backdrop'
+
+
+
+import './ExamApp.css'
+import Graph from './charts/splineChart';
+import Table from './Tables/Table';
 
 class ExamApp extends React.Component{
     state ={
@@ -17,17 +22,32 @@ class ExamApp extends React.Component{
   
     render() {
         let sideDrawer;
-        let backdrop;
-        if(this.state.sideDrawerOpen){
+        
+        if(this.props.sideDrawerOpen){
             sideDrawer= <SideDrawer/>
-            backdrop =<Backdrop />
+        
         }
         
         return (
+            <div className='roo' style={{ height:'100%', background:'rgb(243, 216, 243)'}}>
+                 <div className='heading'>
+        <h2>K.C.S.E RESULT ANALYSIS</h2>
+		</div>
+            
             <div>
                 <Toolbar drawerClickHandler={this.drawerToggleClickHandler} />
-                {sideDrawer}
-                {backdrop}
+                {SideDrawer}
+                
+            </div>
+
+            <div className="root4">
+            <div className="mean-graph"> 
+                <Graph />
+                </div>
+                <div>
+                <Table />
+            </div>
+            </div>
             </div>
         )
     }

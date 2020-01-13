@@ -1,11 +1,11 @@
 .sideDrawer{
     height: 100%;
-    background: purple;
+    background: white;
     width: 70%;
     max-width: 250px;
-    box-shadow: 2px 0px 5px blue;
+    box-shadow: 2px 0px 5px purple;
     position: fixed;
-    top: 0;
+    top: 85px;
     left: 0;
     z-index: 200;
 
@@ -15,15 +15,29 @@
     list-style: none;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-
+    justify-content: flex-start;;
+    text-decoration: none;;
+    flex-direction : column;
 }
 .sideDrawer a{
     text-decoration: none;
-    color: white;
+    color: black;
     font-size: 1.2rem;
+    list-style: none;
 }
-.sideDrawer a:hover,
-.sideDrawer a:active{
-    color:greenyellow;
+.sideDrawer li:hover,
+.sideDrawer li:active{
+    background:purple;
+    text-decoration: none;
+    list-style: none;
+}
+.sideDrawer li{
+    margin:0;
+    list-style-type: none;
+}
+.sideDrawer li a:active,
+.sideDrawer  li a:hover{
+    color: white;
+    list-style: none;
+    text-decoration: none;
 }

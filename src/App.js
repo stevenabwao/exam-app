@@ -1,13 +1,12 @@
 import React from 'react';
-import Header from './components/login/Header/Toolbar'
 import Login from './components/login/login'
 import Register from './components/Register/register'
 import ForgetPassword from './components/ForgetPassword/forgetPassword'
-
+import Exams from './components/exams/exams'
 import { BrowserRouter as Router, Switch , Route } from 'react-router-dom';
 import ExamApp from './components/ExamApp';
 
-
+import '../src/components/ExamApp.css'
 class App extends React.Component {
 
 
@@ -15,7 +14,7 @@ class App extends React.Component {
 
 
         return (
-            <div>
+            <div >
              
                 <Router>
                     <Switch>
@@ -23,6 +22,7 @@ class App extends React.Component {
                         <Route path="/forgetpassword" exact component={ForgetPassword} />
                         <Route path="/home" exact component={ExamApp} />
                         <Route path="/register" exact component={Register} />
+                        <Route path="/exams" exact component={Exams} />
                     </Switch>
 
                 </Router>

@@ -1,0 +1,13 @@
+.exams{
+    display:flex;
+    justify-content: center;
+    background:  rgb(243, 216, 243);
+}
+.exams-page{
+
+    width: 95%;
+    background: white;
+    margin-top: 100px;
+    margin-bottom: 100%;
+    
+}
