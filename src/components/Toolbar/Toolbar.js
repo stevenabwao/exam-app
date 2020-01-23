@@ -1,6 +1,8 @@
 import React from 'react';
 import DrawerButton from '../SideDrawer/DrawerButton'
 import Logo from '../login/Header/logo1.png'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPowerOff,faBell } from "@fortawesome/free-solid-svg-icons";
 import './Toolbar.css'
 
 const toolbar = props => (
@@ -8,7 +10,7 @@ const toolbar = props => (
         <nav className="toolbar-nav">
             <div>
                 
-                <DrawerButton click={props.drawerClickHandler} />
+                <DrawerButton click={props.drawerHandler} />
             </div>
             <div>
             <img
@@ -20,8 +22,8 @@ const toolbar = props => (
             <div className="spacer" />
             <div className="nav-items">
                 <ul>
-                    <li><a href="/">notifications</a></li>
-                    <li><a href="/">Logout</a></li>
+                    <li><a href="/"> <FontAwesomeIcon icon={faBell} />Notifications</a></li>
+                    <li><a href="/"><FontAwesomeIcon icon={faPowerOff} />Logout</a></li>
                 </ul>
             </div>
 

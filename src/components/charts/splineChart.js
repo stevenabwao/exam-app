@@ -4,16 +4,12 @@ import { Line } from 'react-chartjs-2';
 
 import './splineChart.css'
 
-const options={
-  responsive: true,
-  maintainAspectRatio: true,
-}
 const data = {
   labels: [2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016,2017,2018,2019],
   datasets: [
     {
       label: 'RESULT ANALYSIS',
-      fill: true,
+      fill: false,
       lineTension: 0.2,
       backgroundColor: 'rgb(243, 216, 243)',
       borderColor: 'blue',
@@ -41,13 +37,9 @@ export default class graph extends Component {
     return (
 		<div className="graph">
         <Line ref="chart"className="line" data={data} />
-
       </div>
     );
   }
 
-  componentDidMount() {
-    const { datasets } = this.refs.chart.chartInstance.data
-    
-  }
+
 }

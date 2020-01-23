@@ -16,6 +16,7 @@
     "babel-loader": "8.0.6",
     "babel-plugin-named-asset-import": "^0.3.4",
     "babel-preset-react-app": "^9.0.2",
+    "bcrypt": "^3.0.7",
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.19.0",
     "bootstrap": "^4.4.1",
@@ -87,8 +88,8 @@
     "workbox-webpack-plugin": "4.3.1"
   },
   "scripts": {
-    "start": "node scripts/start.js",
-    "build": "node scripts/build.js",
+    "start": "node client/scripts/start.js",
+    "build": "node client/scripts/build.js",
     "test": "node scripts/test.js",
     "dev-server": "nodemon server/server.js"
   },

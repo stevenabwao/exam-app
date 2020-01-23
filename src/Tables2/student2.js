@@ -6,7 +6,7 @@ import { makeData, Logo, Tips } from "./Utils";
 import ReactTable from "react-table";
 import "react-table/react-table.css";
 
-class App extends React.Component {
+class student extends React.Component {
   constructor() {
     super();
     this.state = {
@@ -79,4 +79,3 @@ class App extends React.Component {
   }
 }
 
-render(<App />, document.getElementById("root"));

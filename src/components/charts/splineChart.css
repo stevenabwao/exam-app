@@ -1,9 +1,8 @@
 
 .graph{
     
-    margin-left: 20px;
+    margin-left: 50px;
     background: white;
-}
-.line{
-    width: 100%;
+    justify-content: center;
+    margin-bottom: 30px;
 }

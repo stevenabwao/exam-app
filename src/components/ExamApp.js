@@ -1,6 +1,7 @@
 import React from 'react';
 import Toolbar from './Toolbar/Toolbar'
 import SideDrawer from './SideDrawer/SideDrawer'
+import Results from './Tables/resulttable'
 
 
 
@@ -13,7 +14,7 @@ class ExamApp extends React.Component{
         sideDrawerOpen:false
     };
 
-    drawerToggleClickHandler = () =>{
+    drawerToggleClickHandler = (e) =>{
         this.setState =((prevState) =>
         {
             return {sideDrawerOpen:!prevState.sideDrawerOpen}
@@ -35,7 +36,7 @@ class ExamApp extends React.Component{
 		</div>
             
             <div>
-                <Toolbar drawerClickHandler={this.drawerToggleClickHandler} />
+                <Toolbar drawerHandler={this.drawerToggleClickHandler} />
                 {SideDrawer}
                 
             </div>
@@ -44,7 +45,7 @@ class ExamApp extends React.Component{
             <div className="mean-graph"> 
                 <Graph />
                 </div>
-                <div>
+                <div className= "mean-table">
                 <Table />
             </div>
             </div>

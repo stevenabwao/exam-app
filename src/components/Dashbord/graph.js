@@ -38,7 +38,7 @@ const DonutChart = () => {
 
 
   const LineChartOptions = {
-    responsive: false,
+    responsive: true,
     maintainAspectRatio: true,
     scales: {
     xAxes: [{

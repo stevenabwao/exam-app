@@ -19,7 +19,7 @@ const columns = [
 
 const Table =() => {
   return (
-    <div className="App">
+    <div className="table">
       <Card>
         <DataTable
           title="Yearly School Mean"

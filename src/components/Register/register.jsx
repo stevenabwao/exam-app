@@ -59,7 +59,7 @@ class Register extends React.Component {
     else {
       Register(this.state.name, this.state.email, this.state.password)
         .then(user => {
-          this.props.signupDone()
+           console.log("user added")
         })
         .catch(error => {
           let err
